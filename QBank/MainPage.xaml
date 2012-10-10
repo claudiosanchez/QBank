@@ -1,0 +1,42 @@
+<UserControl
+    x:Class="QBank.MainPage"
+   xmlns:Regions="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:QBank="clr-namespace:QBank" mc:Ignorable="d"
+    d:DesignWidth="640" d:DesignHeight="300">
+    <UserControl.DataContext>
+        <QBank:MainPageViewModelDesign/>
+    </UserControl.DataContext>
+        
+        <Grid x:Name="LayoutRoot" Style="{StaticResource LayoutRootGridStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="196*" />
+        </Grid.RowDefinitions>
+
+            <Border x:Name="BrandingBorder" Style="{StaticResource NavBrandingBorderStyle}" Grid.Row="1">
+            <StackPanel x:Name="BrandingStackPanel" Style="{StaticResource NavBrandingStackPanelStyle}" >
+                <TextBlock x:Name="ApplicationNameTextBlock" Style="{StaticResource ApplicationNameStyle}" Text="{Binding ApplicationName}" />
+                <ContentControl Style="{StaticResource NavLogoIcon}" />
+            </StackPanel>
+        </Border>
+
+        <Border Style="{StaticResource NavContentBorderStyle}" Grid.Row="2">
+            <ContentControl x:Name="TopRegion" Regions:RegionManager.RegionName="TopRegion" Margin="10"/>
+        </Border>
+            
+        <Border x:Name="ContentBorder" Style="{StaticResource NavContentBorderStyle}" Grid.Row="3">
+            <ContentControl x:Name="MainRegion" Regions:RegionManager.RegionName="MainRegion"/>
+        </Border>
+       
+          
+
+    </Grid>
+
+</UserControl>

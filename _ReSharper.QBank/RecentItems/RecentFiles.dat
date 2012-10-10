@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:WcfServiceConfigurationProvider.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:Proxy/f:IFakeService.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:Proxy/f:FakeServiceProxy.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:Proxy/f:FakeService.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:Proxy/f:DynamicWebServiceProxy.cs" caret="0" fromTop="0" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:WithdrawalViewModel.cs" caret="0" fromTop="0" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:CurrentBalanceViewModelDesign.cs" caret="0" fromTop="0" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:CurrentBalanceViewModel.cs" caret="0" fromTop="0" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:AccountBalanceChangedEvent.cs" caret="0" fromTop="0" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/d:Views/f:ErrorWindow.xaml.cs" caret="0" fromTop="0" />
+    <File id="1DA1F168-7E36-468A-AF9C-6167233200F5/f:MyUnitOfWork.cs" caret="0" fromTop="0" />
+    <File id="1DA1F168-7E36-468A-AF9C-6167233200F5/f:QBankContext.cs" caret="0" fromTop="0" />
+    <File id="1DA1F168-7E36-468A-AF9C-6167233200F5/f:packages.config" caret="0" fromTop="0" />
+    <File id="1DA1F168-7E36-468A-AF9C-6167233200F5/f:AccountRepository.cs" caret="0" fromTop="0" />
+    <File id="1DA1F168-7E36-468A-AF9C-6167233200F5/f:QBankDbInitializer.cs" caret="0" fromTop="0" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Handler/f:CheckBalanceRequestHandler.cs" caret="0" fromTop="0" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/f:AccountService.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionInstanceProvider.cs" caret="0" fromTop="0" />
+    <File id="ED1EAB32-0B08-43D2-A753-64E13252DA0A/f:Global.asax.cs" caret="0" fromTop="0" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/d:Service References/d:Proxy/f:Reference.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionWebServiceHostFactory.cs" caret="0" fromTop="0" />
+    <File id="7020124F-9FFC-4AC3-8F3D-AAB8E0240759/f:WebServiceHost.cs/l:..?..?..?AppData?Local?Symbols?src?source?.NET?4?DEVDIV_TFS?Dev10?Releases?RTMRel?ndp?cdf?src?NetFx35?System.ServiceModel.Web?System?ServiceModel?Web?WebServiceHost.cs?1477467?WebServiceHost.cs" caret="0" fromTop="0" />
+    <File id="7020124F-9FFC-4AC3-8F3D-AAB8E0240759/f:WebServiceHostFactory.cs/l:..?..?..?AppData?Local?Symbols?src?source?.NET?4?DEVDIV_TFS?Dev10?Releases?RTMRel?ndp?cdf?src?NetFx35?System.ServiceModel.Web?System?ServiceModel?Activation?WebServiceHostFactory.cs?1305376?WebServiceHostFactory.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionServiceHostFactory.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionServiceBehavior.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionEnabledWebServiceHost.cs" caret="0" fromTop="0" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionEnabledServiceHost.cs" caret="0" fromTop="0" />
+    <File id="ED1EAB32-0B08-43D2-A753-64E13252DA0A/f:crossdomain.xml" caret="0" fromTop="0" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/f:ServiceReferences.ClientConfig" caret="0" fromTop="0" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/d:Assets/f:Styles.xaml" caret="3071" fromTop="20" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionEnabledServiceHost.cs" caret="574" fromTop="16" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/f:App.xaml" caret="305" fromTop="5" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Handler/f:IRequestHandler.cs" caret="291" fromTop="5" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Model/f:CheckBalanceRequest.cs" caret="48" fromTop="2" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/f:IAccountService.cs" caret="502" fromTop="13" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Handler/f:RequestHandlerBase.cs" caret="199" fromTop="0" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Handler/f:WithdrawResquestHandler.cs" caret="311" fromTop="7" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Handler/f:CheckBalanceRequestHandler.cs" caret="765" fromTop="22" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Mapper/f:AccountMapper.cs" caret="110" fromTop="5" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Model/f:ResponseBase.cs" caret="232" fromTop="9" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Model/f:CheckBalanceResponse.cs" caret="184" fromTop="7" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Model/f:WithdrawResponse.cs" caret="180" fromTop="7" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/d:Model/f:WithdrawRequest.cs" caret="267" fromTop="10" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:BasicAccountModule.cs" caret="1171" fromTop="21" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/f:ServiceReferences.ClientConfig" caret="385" fromTop="11" />
+    <File id="ED1EAB32-0B08-43D2-A753-64E13252DA0A/f:crossdomain.xml" caret="211" fromTop="4" />
+    <File id="24FBFD89-0069-408A-A6BF-ECF0CA5E019E/d:WCF/f:DependencyInjectionWebServiceHostFactory.cs" caret="1032" fromTop="17" />
+    <File id="90CAC7EC-480B-43D6-824F-6C59DA02F6F9/f:AccountService.cs" caret="245" fromTop="7" />
+    <File id="ED1EAB32-0B08-43D2-A753-64E13252DA0A/f:Global.asax.cs" caret="673" fromTop="8" />
+    <File id="ED1EAB32-0B08-43D2-A753-64E13252DA0A/f:Web.config" caret="2102" fromTop="29" />
+    <File id="1DA1F168-7E36-468A-AF9C-6167233200F5/f:packages.config" caret="128" fromTop="2" />
+    <File id="1DA1F168-7E36-468A-AF9C-6167233200F5/f:MyUnitOfWork.cs" caret="252" fromTop="10" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:CurrentBalanceView.xaml" caret="1727" fromTop="13" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/d:Views/f:ErrorWindow.xaml.cs" caret="0" fromTop="0" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:WithdrawalViewModel.cs" caret="360" fromTop="9" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:CurrentBalanceViewModelDesign.cs" caret="165" fromTop="4" />
+    <File id="FFD67B3D-BBEA-4697-AD69-9799AA305189/f:CurrentBalanceViewModel.cs" caret="1255" fromTop="30" />
+    <File id="ED1EAB32-0B08-43D2-A753-64E13252DA0A/d:App_Start/f:QBankBootstrapper.cs" caret="1201" fromTop="18" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/f:MainPage.xaml" caret="1082" fromTop="4" />
+    <File id="6E8292A4-3067-467F-9928-1B037FF826E6/d:Assets/f:Styles.xaml" caret="3071" fromTop="20" />
+  </RecentEdits>
+</RecentFiles>

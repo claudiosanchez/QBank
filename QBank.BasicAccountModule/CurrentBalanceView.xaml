@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="QBank.BasicAccountModule.CurrentBalanceView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignHeight="75" d:DesignWidth="450">
+    
+    <Grid x:Name="LayoutRoot" Background="White" MinHeight="20" MinWidth="450" Width="auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*" />
+            <ColumnDefinition Width="141*" />
+            <ColumnDefinition Width="15*" />
+            <ColumnDefinition Width="215*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock  HorizontalAlignment="Right" VerticalAlignment="Center" Text="{Binding StringFormat=\{0:c\}, Path=Balance}"  FontSize="18" Width="135" Margin="5,5,5,5"  Grid.Column="1" Height="24" />
+        <TextBlock  HorizontalAlignment="Left" VerticalAlignment="Center" Text="Balance:"  FontSize="18" Margin="5,5,5,5" />
+        <TextBlock FontSize="12"  FontWeight="Bold" HorizontalAlignment="Left" Margin="0,12,0,46" Text="Client:" VerticalAlignment="Center" Grid.Column="3" />
+        <TextBlock  FontSize="12" Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="42,13,0,0" Name="textBlock1" Text="{Binding AccountHolder}" VerticalAlignment="Top" Width="161" />
+        <TextBlock FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="0,34,0,25" Text="Acct. Type:" VerticalAlignment="Center" Grid.Column="3" />
+        <TextBlock FontSize="12" Height="23" HorizontalAlignment="Left" Margin="68,32,0,0" Name="textBlock2" Text="{Binding AccountType}" VerticalAlignment="Top" Width="135" Grid.Column="3" />
+    </Grid>
+</UserControl>

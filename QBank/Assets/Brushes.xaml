@@ -1,0 +1,183 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- *************COLORS START************* -->
+    
+    <!-- Theme Base Colors -->
+    
+   <!--ACCENT COLORS-->
+    <Color x:Key="HighlightColor">#FF8AB801</Color>
+    <Color x:Key="AccentColor">#FF8AB801</Color>
+    <!--50%--><Color x:Key="SemiTransparentAccentColor">#7F8AB801</Color>
+    <!--20%--><Color x:Key="SemiSemiTransparentAccentColor">#338AB801</Color>
+    
+    <!--BASE COLORS-->
+    <Color x:Key="BaseColor1">#FF000000</Color>
+    <!--Note: For the best design BaseColor2 should be a contrast color of BaseColor1-->
+    <Color x:Key="BaseColor2">#FFFFFFFF</Color>
+    <Color x:Key="BaseColor3">#FF303030</Color>
+    <Color x:Key="BaseColor4">#FF565656</Color>
+    <Color x:Key="BaseColor5">#FFBABABA</Color>
+    <Color x:Key="BaseColor6">#FFDCDBDB</Color>
+    <Color x:Key="BaseColor7">#FFF4F4F4</Color>
+    
+    <!--LIGHT COLOR TRANSPARENCIES-->
+    <Color x:Key="TransparentWhiteColor">#00FFFFFF</Color>
+    <!--85%--><Color x:Key="TransparentLightColor">#D8FFFFFF</Color>
+    <!--65%--><Color x:Key="TransparentLightLightColor">#A5FFFFFF</Color>
+    <!--25%--><Color x:Key="TransparentLightestColor">#34FFFFFF</Color>
+    
+    <!--DARK COLOR TRANSPARENCIES-->
+    <!--25%--><Color x:Key="TransparentDarkColor">#3F000000</Color>
+    <!--35%--><Color x:Key="TransparentDarkDarkColor">#59000000</Color>
+    <!--60%--><Color x:Key="TransparentDarkDarkDarkColor">#99000000</Color>
+    <!--80%--><Color x:Key="TransparentDarkestColor">#CC000000</Color>    
+    
+
+    <!-- CORE CONTROL COLORS-->
+    <Color x:Key="ValidationColor1">#052A2E31</Color>
+    <Color x:Key="ValidationColor2">#152A2E31</Color>
+    <Color x:Key="ValidationColor3">#252A2E31</Color>
+    <Color x:Key="ValidationColor4">#352A2E31</Color>
+    <Color x:Key="ValidationColor5">#FFDC000C</Color>
+    <Color x:Key="ValidationSummaryColor1">#FFDC020D</Color>
+    <Color x:Key="ValidationSummaryColor2">#FFCA000C</Color>
+    <Color x:Key="ValidationSummaryColor3">#FFFF9298</Color>
+    <Color x:Key="ValidationSummaryColor4">#FFFDC8C8</Color>
+    <Color x:Key="ValidationSummaryColor5">#DDD43940</Color>
+    <Color x:Key="ValidationSummaryFillColor1">#59F7D8DB</Color>
+    <Color x:Key="ValidationSummaryFillColor2">#FFF7D8DB</Color>
+    <Color x:Key="ControlsValidationColor">#FFDB000C</Color>
+    
+    <!-- SDK COLORS -->    
+    <Color x:Key="PageOverlayColor">#7F000000</Color>
+    <Color x:Key="FuzzColor1">#14C51900</Color>
+    <Color x:Key="FuzzColor2">#1EC51900</Color>
+    <Color x:Key="FuzzColor3">#FFC51900</Color>
+
+    <!-- TOOLKIT COLORS --> 
+    <Color x:Key="OKButtonIconColor1">#FF67CA0A</Color>
+    <Color x:Key="OKButtonIconColor2">#FF498C38</Color>
+    <Color x:Key="OKButtonIconColor3">#FF29EE5B</Color>
+    <Color x:Key="CancelButtonIconColor1">#FFEA7525</Color>
+    <Color x:Key="CancelButtonIconColor2">#FFDA715B</Color>
+    <Color x:Key="CancelButtonIconColor3">#FFB72909</Color>
+    
+    <!--CHART COLORS-->
+    <Color x:Key="ChartBrush1">#FFACCF4D</Color>
+    <Color x:Key="ChartBrush2">#FFECC858</Color>
+    <Color x:Key="ChartBrush3">#FF47BF60</Color>
+    <Color x:Key="ChartBrush4">#FF4AC1C8</Color>
+    <Color x:Key="ChartBrush5">#FFECB358</Color>
+    <Color x:Key="ChartBrush6">#FF4556BA</Color>
+    <Color x:Key="ChartBrush7">#FFC84BA4</Color>
+    <Color x:Key="ChartBrush8">#FF477ABE</Color>
+    <Color x:Key="ChartBrush9">#FF6644B7</Color>
+    <Color x:Key="ChartBrush10">#FFA045BA</Color>
+    <Color x:Key="ChartBrush11">#FF73C348</Color>
+    <Color x:Key="ChartBrush12">#FFDD5279</Color>
+    <Color x:Key="ChartBrush13">#FF4999C4</Color>
+    <Color x:Key="ChartBrush14">#FFEC6558</Color>
+    <Color x:Key="ChartBrush15">#FFEC8B58</Color>
+    <Color x:Key="ChartBrush16">#FFECA058</Color>
+
+    <!-- Colors Stop -->
+
+    <!-- *************BRUSHES START************* -->
+
+    <!--PROJECT TEMPLATE BRUSHES -->
+    <SolidColorBrush x:Key="NavigationBackgroundColorBrush" Color="{StaticResource BaseColor4}"/>
+    <SolidColorBrush x:Key="NavigationForegroundColorBrush" Color="{StaticResource BaseColor2}"/>
+    <SolidColorBrush x:Key="HighLightColorBrush" Color="{StaticResource AccentColor}"/>
+    <SolidColorBrush x:Key="HoverHyperlinkForegroundColorBrush" Color="{StaticResource BaseColor2}"/>
+    <SolidColorBrush x:Key="HoverHyperLinkBackgroundColorBrush" Color="{StaticResource BaseColor3}"/>
+    <SolidColorBrush x:Key="BodyTextColorBrush" Color="{StaticResource BaseColor3}"/>
+    <SolidColorBrush x:Key="AccentColorBrush" Color="{StaticResource AccentColor}"/>
+
+    <!-- UNIVERSAL CONTROL BRUSHES -->
+    <SolidColorBrush x:Key="TextContentBrush" Color="{StaticResource BaseColor1}" />
+    <SolidColorBrush x:Key="TextHeaderBrush" Color="{StaticResource BaseColor1}" />
+    <SolidColorBrush x:Key="BlankBackgroundBrush" Color="{StaticResource BaseColor2}" />
+    <SolidColorBrush x:Key="TransparentBrush" Color="{StaticResource TransparentWhiteColor}" />
+    <SolidColorBrush x:Key="BaseBrush3" Color="{StaticResource BaseColor3}" />
+    <SolidColorBrush x:Key="BaseBrush4" Color="{StaticResource BaseColor4}" />
+    <SolidColorBrush x:Key="BaseBrush5" Color="{StaticResource BaseColor5}" />
+    <SolidColorBrush x:Key="BaseBrush6" Color="{StaticResource BaseColor6}" />
+    <SolidColorBrush x:Key="BaseBrush7" Color="{StaticResource BaseColor7}" />
+    <SolidColorBrush x:Key="ButtonForegroundBrush" Color="{StaticResource BaseColor3}"/>
+    <SolidColorBrush x:Key="PageLinksBorderBrush" Color="{StaticResource TransparentLightLightColor}"/>
+    <SolidColorBrush x:Key="ReadOnlyBrush" Color="{StaticResource TransparentLightestColor}"/>
+    <SolidColorBrush x:Key="ControlsDisabledBrush" Color="{StaticResource TransparentLightLightColor}"/>
+    <SolidColorBrush x:Key="ControlsValidationBrush" Color="{StaticResource ControlsValidationColor}"/>
+    <SolidColorBrush x:Key="LightBorderBrush" Color="{StaticResource BaseColor5}"/>
+    <SolidColorBrush x:Key="LightSemiTransparentBrush" Color="{StaticResource TransparentLightLightColor}"/>
+    <SolidColorBrush x:Key="PageOverlayBrush" Color="{StaticResource PageOverlayColor}"/>
+    <SolidColorBrush x:Key="FuzzBrush1" Color="{StaticResource FuzzColor1}"/>
+    <SolidColorBrush x:Key="FuzzBrush2" Color="{StaticResource FuzzColor2}"/>
+    <SolidColorBrush x:Key="FuzzBrush3" Color="{StaticResource FuzzColor3}"/>
+    <SolidColorBrush x:Key="DropShadowBrush1" Color="{StaticResource TransparentDarkColor}"/>
+    <SolidColorBrush x:Key="DropShadowBrush2" Color="{StaticResource TransparentDarkColor}"/>
+    <SolidColorBrush x:Key="DropShadowBrush3" Color="{StaticResource TransparentDarkColor}"/>
+    <SolidColorBrush x:Key="DropShadowBrush4" Color="{StaticResource TransparentDarkColor}"/>
+    <SolidColorBrush x:Key="DarkSemiTransparentBrush" Color="{StaticResource TransparentDarkDarkDarkColor}"/>
+    <SolidColorBrush x:Key="NestedTextBoxBorderBrush" Color="{StaticResource BaseColor2}"/>
+    <SolidColorBrush x:Name="NormalBorderBrush" Color="{StaticResource BaseColor6}" />
+    <SolidColorBrush x:Name="MouseOverBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Name="FocusedBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Name="DisabledBackgroundBrush" Color="{StaticResource BaseColor7}" />
+    <SolidColorBrush x:Name="DisabledForegroundBrush" Color="{StaticResource BaseColor6}" />
+
+    <LinearGradientBrush x:Key="NormalBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="{StaticResource BaseColor2}" Offset="0"/>
+        <GradientStop Color="{StaticResource BaseColor7}" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="PressedBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="Transparent" Offset="0"/>
+        <GradientStop Color="{StaticResource HighlightColor}" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="RadioButtonNormalBrush" EndPoint="1,0.5" StartPoint="0,0.5">
+        <GradientStop Color="{StaticResource BaseColor2}" Offset="0"/>
+        <GradientStop Color="{StaticResource BaseColor6}" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="NormalInnerBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="{StaticResource BaseColor2}" Offset="0"/>
+        <GradientStop Color="{StaticResource BaseColor6}" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <SolidColorBrush x:Name="WindowBackgroundBrush" Color="{StaticResource BaseColor2}" />
+    <LinearGradientBrush x:Key="VerticalRepeatButtonBrush" EndPoint="1.001,0.5" StartPoint="-0.001,0.5">
+        <GradientStop Color="{StaticResource BaseColor2}" Offset="0"/>
+        <GradientStop Color="{StaticResource BaseColor7}" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="VerticalRepeatButtonInnerBorderBrush" EndPoint="0.998,0.5" StartPoint="0,0.5">
+        <LinearGradientBrush.RelativeTransform>
+            <MatrixTransform/>
+        </LinearGradientBrush.RelativeTransform>
+        <GradientStop Color="{StaticResource BaseColor2}" Offset="0"/>
+        <GradientStop Color="{StaticResource BaseColor6}" Offset="1"/>
+    </LinearGradientBrush>     
+
+    <!-- CONTROL VALIDATION BRUSHES -->        
+    <SolidColorBrush x:Key="ValidationBrush1" Color="{StaticResource ValidationColor1}"/>
+    <SolidColorBrush x:Key="ValidationBrush2" Color="{StaticResource ValidationColor2}"/>
+    <SolidColorBrush x:Key="ValidationBrush3" Color="{StaticResource ValidationColor3}"/>
+    <SolidColorBrush x:Key="ValidationBrush4" Color="{StaticResource ValidationColor4}"/>
+    <SolidColorBrush x:Key="ValidationBrush5" Color="{StaticResource ValidationColor5}"/>
+    <SolidColorBrush x:Key="ValidationSummaryBrush1" Color="{StaticResource ValidationSummaryColor1}"/>
+    <SolidColorBrush x:Key="ValidationSummaryBrush2" Color="{StaticResource ValidationSummaryColor2}"/>
+    <SolidColorBrush x:Key="ValidationSummaryBrush3" Color="{StaticResource ValidationSummaryColor3}"/>
+    <SolidColorBrush x:Key="ValidationSummaryBrush4" Color="{StaticResource ValidationSummaryColor4}"/>
+    <SolidColorBrush x:Key="ValidationSummaryBrush5" Color="{StaticResource ValidationSummaryColor5}"/>
+    <SolidColorBrush x:Key="ValidationSummaryFillBrush1" Color="{StaticResource ValidationSummaryFillColor1}"/>
+    <SolidColorBrush x:Key="ValidationSummaryFillBrush2" Color="{StaticResource ValidationSummaryFillColor2}"/>
+    <SolidColorBrush x:Key="ValidationSummaryDisabledBrush" Color="{StaticResource TransparentLightLightColor}"/>      
+
+    
+    <!-- Brushes Stop -->
+
+</ResourceDictionary>
