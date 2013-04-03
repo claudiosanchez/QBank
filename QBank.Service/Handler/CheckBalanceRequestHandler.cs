@@ -1,3 +1,4 @@
+using System.Linq;
 using QBank.DataAccess;
 using QBank.Model;
 using QBank.Service.Mapper;
@@ -8,11 +9,11 @@ namespace QBank.Service.Handler
     public class CheckBalanceRequestHandler : RequestHandlerBase<CheckBalanceRequest, CheckBalanceResponse>
     {
         private readonly IEntityMapper<AccountDto, Account> _entityMapper;
-        private readonly MyUnitOfWork _unitofWork;
+        private readonly IAccountRepository _repository;
 
-        public CheckBalanceRequestHandler(MyUnitOfWork unitofWork, IEntityMapper<AccountDto, Account> entityMapper)
+        public CheckBalanceRequestHandler(IAccountRepository repository, IEntityMapper<AccountDto, Account> entityMapper)
         {
-            _unitofWork = unitofWork;
+            _repository = repository;
             _entityMapper = entityMapper;
         }
 
@@ -20,7 +21,7 @@ namespace QBank.Service.Handler
         {
             var response = CreateResponse();
 
-            var account = _unitofWork.AccountRepository.First(a => a.AccountNumber.Equals(request.AccountNumber));
+            var account = _repository.Accounts().First(a => a.AccountNumber.Equals(request.AccountNumber));
 
             response.Account = _entityMapper.MapToDto(account);
 

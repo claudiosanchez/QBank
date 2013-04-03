@@ -32,7 +32,7 @@
         </Border>
             
         <Border x:Name="ContentBorder" Style="{StaticResource NavContentBorderStyle}" Grid.Row="3">
-            <ContentControl x:Name="MainRegion" Regions:RegionManager.RegionName="MainRegion"/>
+            <ContentControl x:Name="MainRegion" Regions:RegionManager.RegionName="MainRegion" Margin="0,0,-129,0"/>
         </Border>
        
           

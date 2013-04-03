@@ -19,7 +19,7 @@ namespace QBank.BasicAccountModule
         /// </summary>
         public CurrentBalanceViewModel()
         {
-            
+            Balance=5555;
         }
 
         [InjectionConstructor]

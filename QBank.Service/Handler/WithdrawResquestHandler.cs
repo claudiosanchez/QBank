@@ -1,3 +1,4 @@
+using System.Linq;
 using QBank.DataAccess;
 using QBank.Model;
 using QBank.Service.Mapper;
@@ -7,12 +8,12 @@ namespace QBank.Service.Handler
 {
     public class WithdrawResquestHandler: RequestHandlerBase<WithdrawRequest, WithdrawResponse>
     {
-        private readonly MyUnitOfWork _unitOfWork;
         private readonly IEntityMapper<AccountDto, Account> _mapper;
+        private readonly AccountRepository _repository;
 
-        public WithdrawResquestHandler(MyUnitOfWork unitOfWork,IEntityMapper<AccountDto, Account> mapper )
+        public WithdrawResquestHandler(AccountRepository repository,IEntityMapper<AccountDto, Account> mapper )
         {
-            _unitOfWork = unitOfWork;
+            _repository = repository;
             _mapper = mapper;
         }
 
@@ -21,7 +22,7 @@ namespace QBank.Service.Handler
             var response = CreateResponse();
             // TODO: In real life, this would be part of an Account Facade/Manager wrapping the whole thing in a transaction 
 
-            var account = _unitOfWork.AccountRepository.First(a => a.AccountNumber.Equals(request.AccountNumber));
+            var account = _repository.Accounts().First(a => a.AccountNumber.Equals(request.AccountNumber));
 
             string errorMessage = string.Empty;
             bool isError = false;
@@ -39,7 +40,7 @@ namespace QBank.Service.Handler
             else
             {
                 account.Balance -= request.Amount;
-                _unitOfWork.Commit();
+                //_unitOfWork.Commit();
             }
 
             AccountDto dto = _mapper.MapToDto(account);

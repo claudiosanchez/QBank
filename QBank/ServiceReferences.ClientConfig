@@ -9,7 +9,7 @@
       </basicHttpBinding>
     </bindings>
     <client>
-      <endpoint address="http://localhost/QBank.Web/AccountService" binding="basicHttpBinding"
+      <endpoint address="http://localhost:5487/AccountService" binding="basicHttpBinding"
           bindingConfiguration="BasicHttpBinding_IAccountService" contract="Proxy.IAccountService"
           name="BasicHttpBinding_IAccountService" />
     </client>

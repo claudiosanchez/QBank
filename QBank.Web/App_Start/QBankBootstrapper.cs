@@ -1,6 +1,7 @@
 using System.Data.Entity;
 using System.ServiceModel;
 using HibernatingRhinos.Profiler.Appender.EntityFramework;
+using QBank.DataAccess;
 using QBank.Model;
 using QBank.Service;
 using QBank.Service.Handler;
@@ -16,7 +17,7 @@ namespace QBank.Web.App_Start
 {
     public static class QBankBootstrapper
     {
-        private static ServiceHost _host;
+        //private static ServiceHost _host;
         private static IContainer _container;
 
         public static void PreStart()
@@ -51,7 +52,7 @@ namespace QBank.Web.App_Start
                                          x.For<IRequestHandler<WithdrawRequest, WithdrawResponse>>()
                                              .Use
                                              <WithdrawResquestHandler>();
-
+                                         x.For<IAccountRepository>().Use<AccountRepository>();
                                          x.For<IEntityMapper<AccountDto, Account>>().Use<AccountMapper>();
                                          x.For<AccountService>().Use<AccountService>();
                                          x.For<DbContext>().HttpContextScoped().Use(ctx => new DbContext("QBankContext"));

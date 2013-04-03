@@ -171,7 +171,7 @@ namespace QBank.Infrastructure.Web.Proxy
                 default:
                     throw new ApplicationException(string.Format("The following address is not supported. {0}",
                                                                  _remoteUri));
-                    break;
+                    
             }
 
             return binding;
@@ -204,30 +204,25 @@ namespace QBank.Infrastructure.Web.Proxy
         /// <returns></returns>
         public virtual OperationResults CallOperationOnClient(Action operation)
         {
-            bool succeeded = false;
             string message = string.Empty;
-            OperationResults result;
 
             try
             {
                 operation.Invoke();
-                succeeded = true;
             }
 
             catch (FaultException ex)
             {
-                succeeded = false;
                 Logger.Error(ex);
             }
             catch (CommunicationException ex)
             {
-                succeeded = false;
                 message = "There was a communication-related problem. Please read the log for details."; 
                 Logger.Error(ex);
             }
             
-
-            return new OperationResults( succeeded, message);
+            
+            return new OperationResults( true, message);
         }
         
         /// <summary>

@@ -37,9 +37,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.Patterns">
-      <HintPath>..\packages\EntityFramework.Patterns.0.7\lib\net40\EntityFramework.Patterns.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -75,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QBank.DataAccess\QBank.DataAccess.csproj">
-      <Project>{1DA1F168-7E36-468A-AF9C-6167233200F5}</Project>
+      <Project>{1da1f168-7e36-468a-af9c-6167233200f5}</Project>
       <Name>QBank.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\QBank.Model\QBank.Model.csproj">

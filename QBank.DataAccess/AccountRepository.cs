@@ -1,19 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using EntityFramework.Patterns;
 using QBank.Model;
 
 namespace QBank.DataAccess
 {
-    public class AccountRepository: Repository<Account>
+    public class AccountRepository : IAccountRepository
     {
-        private readonly IObjectSetFactory _objectSetFactory;
+        private readonly QBankContext _context;
 
-        public AccountRepository(IObjectSetFactory objectSetFactory) : base(objectSetFactory)
+        public AccountRepository(QBankContext context)
         {
-            _objectSetFactory = objectSetFactory;
+            _context = context;
+        }
+
+        public IEnumerable<Account> Accounts()
+        {
+            return _context.Accounts.AsEnumerable();
+        }
+
+        public Account GetById(int id)
+        {
+           return _context.Accounts.FirstOrDefault(a => a.Id == id);
         }
     }
 }
