@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{12D7B2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank", "QBank\QBank.csproj", "{6E8292A4-3067-467F-9928-1B037FF826E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank.Web", "QBank.Web\QBank.Web.csproj", "{ED1EAB32-0B08-43D2-A753-64E13252DA0A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank.BasicAccountModule", "QBank.BasicAccountModule\QBank.BasicAccountModule.csproj", "{FFD67B3D-BBEA-4697-AD69-9799AA305189}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank.Model", "QBank.Model\QBank.Model.csproj", "{C8386F02-74E2-48D6-8D87-3F151203AC46}"
@@ -21,6 +19,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank.Service", "QBank.Service\QBank.Service.csproj", "{90CAC7EC-480B-43D6-824F-6C59DA02F6F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank.Infrastructure.Web", "QBank.Infrastructure.Web\QBank.Infrastructure.Web.csproj", "{24FBFD89-0069-408A-A6BF-ECF0CA5E019E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank.Api", "QBank.Api\QBank.Api.csproj", "{2E622B76-DE24-4398-BB9A-D6EB06723334}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +32,6 @@ Global
 		{6E8292A4-3067-467F-9928-1B037FF826E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E8292A4-3067-467F-9928-1B037FF826E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E8292A4-3067-467F-9928-1B037FF826E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED1EAB32-0B08-43D2-A753-64E13252DA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED1EAB32-0B08-43D2-A753-64E13252DA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED1EAB32-0B08-43D2-A753-64E13252DA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED1EAB32-0B08-43D2-A753-64E13252DA0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FFD67B3D-BBEA-4697-AD69-9799AA305189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FFD67B3D-BBEA-4697-AD69-9799AA305189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD67B3D-BBEA-4697-AD69-9799AA305189}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -56,6 +52,10 @@ Global
 		{24FBFD89-0069-408A-A6BF-ECF0CA5E019E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24FBFD89-0069-408A-A6BF-ECF0CA5E019E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24FBFD89-0069-408A-A6BF-ECF0CA5E019E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E622B76-DE24-4398-BB9A-D6EB06723334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E622B76-DE24-4398-BB9A-D6EB06723334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E622B76-DE24-4398-BB9A-D6EB06723334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E622B76-DE24-4398-BB9A-D6EB06723334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
