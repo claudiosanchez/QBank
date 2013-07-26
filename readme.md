@@ -14,3 +14,7 @@ Model-View-View-Model (MVVM), Repository, Dependency Injection/Inversion of Cont
 
 Screenshots
 -----------
+![](Images/splash.png)
+![](Images/login.png)
+![](Images/accounts.png)
+![](Images/transactions.png)
