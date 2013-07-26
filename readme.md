@@ -6,7 +6,7 @@ Requirements
 --------------
 QBank requirements are to employ Service Oriented Archicture (SOA) to make their Banking System accessible via multiple clients (e.g.:Mobiles, Desktop & Web). 
 
-QBank wanted their client application to look very appealing to the consumer, so we chose Silverlight (Yes, we did) to develop a rich UI to surpass their customer expectations.
+QBank wanted their client application to look very appealing to the consumer, so we chose Silverlight to develop a rich UI to surpass their customer expectations, and just recently Xamarin.iOS to develop the iOS client.
 
 Patterns & Tecnologies
 ________
