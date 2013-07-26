@@ -11,3 +11,6 @@ QBank wanted their client application to look very appealing to the consumer, so
 Patterns & Tecnologies
 ________
 Model-View-View-Model (MVVM), Repository, Dependency Injection/Inversion of Control, Unit of Work, Request/Response Service Pattern, UI Composition using Prism, WCF, Unity, StructureMap, EntityFramework, Nuget,
+
+Screenshots
+-----------
