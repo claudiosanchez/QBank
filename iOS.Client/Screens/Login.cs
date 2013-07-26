@@ -1,54 +1,78 @@
 using System;
 using System.Drawing;
-
 using MonoTouch.CoreFoundation;
+using MonoTouch.Dialog;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
+using iOS.Client.MonoTouch.Dialog;
 
 namespace iOS.Client.Screens
 {
-    [Register("UniversalView")]
-    public class UniversalView : UIView
-    {
-        public UniversalView()
-        {
-            Initialize();
-        }
+	[Register("Login")]
+	public class Login : UIViewController
+	{
+		private readonly UIWindow _window;
+		RootElement _root;
+		IAccountsRepository repository;
 
-        public UniversalView(RectangleF bounds)
-            : base(bounds)
-        {
-            Initialize();
-        }
+		public Login (UIWindow window, IAccountsRepository repository)
+		{
+			this.repository = repository;
+			_window = window;
+		}
 
-        void Initialize()
-        {
-            BackgroundColor = UIColor.Red;
-        }
-    }
+		public override void DidReceiveMemoryWarning ()
+		{
+			// Releases the view if it doesn't have a superview.
+			base.DidReceiveMemoryWarning ();
 
-    [Register("UIViewController1")]
-    public class UIViewController1 : UIViewController
-    {
-        public UIViewController1()
-        {
-        }
+			// Release any cached data, images, etc that aren't in use.
+		}
 
-        public override void DidReceiveMemoryWarning()
-        {
-            // Releases the view if it doesn't have a superview.
-            base.DidReceiveMemoryWarning();
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+          
+			_root = new RootElement ("Login") { 
+				new Section(String.Empty)
+                        {
+                            new EntryElement("Username", "myusername", "lorenzo.martinez"),
+				},
+				new Section(String.Empty)
+				{
+                            new EntryElement("Password", "", "nomecambies", isPassword: true),
+                          
+                        },
+				new Section()
+				{
+					new StyledStringElement("Login", () => {
 
-            // Release any cached data, images, etc that aren't in use.
-        }
+						var nav = new UINavigationController( new Accounts(_window,repository));
+						_window.RootViewController =nav;
 
-        public override void ViewDidLoad()
-        {
-            View = new UniversalView();
+					}),
+				}
+			};
 
-            base.ViewDidLoad();
+			var dialog = new DialogViewController (_root);
 
-            // Perform any additional setup after loading the view
-        }
-    }
+			Add (dialog.View);
+
+			// Perform any additional setup after loading the view
+		}
+
+		public override void ViewDidAppear (bool animated)
+		{
+			base.ViewDidAppear (animated);
+			var paper = UIImage.FromBundle ("paper");
+			var paperView = new UIView (_window.Bounds) {
+				BackgroundColor = UIColor.FromPatternImage(paper)
+			};
+
+
+			_root.TableView.AddSubview (paperView);
+			_root.TableView.SendSubviewToBack (paperView);
+
+		}
+	}
 }

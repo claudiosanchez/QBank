@@ -1,24 +1,18 @@
 using System;
 using System.Drawing;
-using BigTed;
+//using BigTed;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using TinyMessenger;
+using BigTed;
 
 namespace iOS.Client
 {
     [Register("Home")]
     public class Home : UIViewController
     {
-        private readonly Action _bootstrapper;
         public event EventHandler OnFinishedBootstrapping;
     
-    
-        public Home(Action bootstrapper)
-        {
-            _bootstrapper = bootstrapper;
-
-        }
-
         public override void DidReceiveMemoryWarning()
         {
             // Releases the view if it doesn't have a superview.
@@ -30,29 +24,23 @@ namespace iOS.Client
         public override void LoadView()
         {
             base.LoadView();
-            UIImage background = UIImage.FromBundle("Default-568h");
+            UIImage background = UIImage.FromBundle("default-568h.png");
             var backgroundView = new UIImageView(background);
             
             View.AddSubview(backgroundView);
-        }
-
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
-            // Perform any additional setup after loading the view
-        }
+       }
 
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-            BTProgressHUD.Show("Loading");
 
-            _bootstrapper.BeginInvoke(RaiseOnFinishedBootstrapping, null);
+			BTProgressHUD.Show("Loading");
+           RaiseOnFinishedBootstrapping();
         }
 
-        private void RaiseOnFinishedBootstrapping(IAsyncResult ar)
+        private void RaiseOnFinishedBootstrapping()
         {
-          if(OnFinishedBootstrapping!=null)OnFinishedBootstrapping(this, new EventArgs());
+			if(OnFinishedBootstrapping!=null)OnFinishedBootstrapping(this, new EventArgs());
         }
     }
 }

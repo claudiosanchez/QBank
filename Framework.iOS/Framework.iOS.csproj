@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>8aa6998d-0672-44a7-9b72-b0f6cf57d886</ProjectGuid>
+    <ProjectGuid>{0166E991-1FED-4430-AF57-BC51E774B9A3}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>Framework.iOS</RootNamespace>
@@ -34,8 +34,23 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\CancellableGenericTinyMessage.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\TinyMessageBase.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\DefaultTinyMessageProxy.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\GenericTinyMessage.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\ITinyMessage.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\ITinyMessageProxy.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\ITinyMessageSubscription.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\ITinyMessengerHub.cs" />
+    <Compile Include="Infrastructure\TinyIoC.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\TinyMessageSubscriptionToken.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\TinyMessengerHub.cs" />
+    <Compile Include="Infrastructure\TinyMessenger\TinyMessengerSubscriptionException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extension\UIColorExtension.cs" />
+    <Compile Include="MTD\IModelBasedCellFactory.cs" />
+    <Compile Include="MTD\ModelBasedElement.cs" />
+    <Compile Include="MTD\CustomCellBase.cs" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
@@ -44,6 +59,11 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Extension\" />
+    <Folder Include="MTD\" />
+  </ItemGroup>
 </Project>

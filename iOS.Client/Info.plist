@@ -5,28 +5,25 @@
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
+		<integer>2</integer>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>3.2</string>
+	<string>5.0</string>
 	<key>CFBundleDisplayName</key>
-	<string></string>
+	<string>QBank.iOS</string>
 	<key>CFBundleIdentifier</key>
-	<string></string>
+	<string>com.megsoft.qbank.ios</string>
 	<key>CFBundleVersion</key>
-	<string></string>
+	<string>0.2</string>
 	<key>NSMainNibFile</key>
 	<string></string>
 	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Resources/Default@2x.png</string>
-		<string>Resources/Default-568h@2x.png</string>
-	</array>
+	<array/>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array/>
 </dict>

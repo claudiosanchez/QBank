@@ -5,7 +5,7 @@ using System.Text;
 
 namespace iOS.Client.Model
 {
-    public class ReleaseDates
+	public class ReleaseDates
     {
         public string theater { get; set; }
     }

@@ -72,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QBank.DataAccess\QBank.DataAccess.csproj">
-      <Project>{1da1f168-7e36-468a-af9c-6167233200f5}</Project>
+      <Project>{1DA1F168-7E36-468A-AF9C-6167233200F5}</Project>
       <Name>QBank.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\QBank.Model\QBank.Model.csproj">
