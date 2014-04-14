@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using Shared;
+using Shared.ViewModel;
 
 namespace WP.Client
 {
     public partial class Accounts : PhoneApplicationPage
     {
+        AccountViewModel viewModel = new AccountViewModel();
+
         public Accounts()
         {
             InitializeComponent();
@@ -21,9 +17,8 @@ namespace WP.Client
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            var accounts = new AccountsRepository();
-            var accountsList = accounts.GetAccountByCustomerId(0).ToList();//The default one i guess
-            llsAccounts.ItemsSource = accountsList;
+
+            llsAccounts.ItemsSource = viewModel.AccountItems() ;
         }
 
         private void llsAccounts_Tap(object sender, System.Windows.Input.GestureEventArgs e)

@@ -37,7 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\AccountsRepository.cs" />
+    <Compile Include="ViewModel\AccountViewModel.cs" />
     <Compile Include="DataAccess\IAccountRepository.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

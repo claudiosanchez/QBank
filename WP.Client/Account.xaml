@@ -94,7 +94,10 @@
 
                 </phone:PivotItem>
                 <phone:PivotItem Header="Transactions">
-                    <phone:LongListSelector x:Name="llsTransactions" ItemTemplate="{StaticResource dtTransactions}"></phone:LongListSelector>
+                    <phone:LongListSelector 
+                        x:Name="llsTransactions" 
+                        ItemTemplate="{StaticResource dtTransactions}"
+                        ItemsSource="{Binding Transactions}"></phone:LongListSelector>
                 </phone:PivotItem>
             </phone:Pivot>
 

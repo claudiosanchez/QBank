@@ -15,7 +15,7 @@ namespace Shared
            return  seedAccounts.Where(x => x.AccountNumber == accountNumber).FirstOrDefault();
 		}
 
-		public IEnumerable<Account> GetAccountByCustomerId (int id)
+		public IEnumerable<Account> GetAccountByCustomerId (int id = 0)//The default is 0 since the table doesn't have any customer id field
 		{
 			return seedAccounts;
 		}

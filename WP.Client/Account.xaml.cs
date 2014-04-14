@@ -7,11 +7,14 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Shared.ViewModel;
 
 namespace WP.Client
 {
     public partial class Account : PhoneApplicationPage
     {
+
+        AccountViewModel viewModel = new AccountViewModel();
         public Account()
         {
             InitializeComponent();
@@ -22,14 +25,8 @@ namespace WP.Client
             base.OnNavigatedTo(e);
             var AccountId = NavigationContext.QueryString["AccountNumber"].ToString() ;
 
-            var Accounts = new Shared.AccountsRepository();
-            var account = Accounts.GetByAccountNumber(AccountId);
-            llsTransactions.ItemsSource = account.Transactions.ToList();
-            txtAccount.Text = AccountId;
-            txtAcountHolder.Text = account.AccountHolder;
-            txtAccountType.Text = account.AccountType;
-            txtAccountSubType.Text = account.AccountSubType;
-            txtBalance.Text = String.Format("{0:c}", account.Balance);
+
+            this.DataContext = viewModel.AccountItem(AccountId);
         }
     }
 }
