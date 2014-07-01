@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{842ADB2E-6B84-48C8-820B-AA72955D78F2}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
@@ -40,7 +38,8 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <AssemblyName>iOS</AssemblyName>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -65,8 +64,10 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <AssemblyName>QBank</AssemblyName>
-    <IpaPackageName />
-    <MtouchI18n />
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
@@ -122,6 +123,7 @@
     <Compile Include="Element\TransactionCell.cs" />
     <Compile Include="Element\TransactionElement.cs" />
     <Compile Include="Element\AccountRootElement.cs" />
+    <Compile Include="Screens\Transaction.cs" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponent Include="btprogresshud">
@@ -185,7 +187,6 @@
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="btprogresshud">
-      <InstallationInProgress>True</InstallationInProgress>
       <Version>1.5</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>

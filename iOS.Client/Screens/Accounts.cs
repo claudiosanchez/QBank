@@ -54,7 +54,7 @@ public class Accounts: DialogViewController
 			in accountsByGroup 
 			select new Section () {  //  i.e.: Deposits 
 			from account in _group select
-					new AccountRootElement(account,true, StyleTransactionsScreen) 
+			new AccountRootElement(accountRepo: repository, account: account, showIndicator: true, createOnSelected: StyleTransactionsScreen, createAddButton: true) 
 					{
 						new Section()  // Section for Account Header 
 						{
@@ -86,5 +86,12 @@ public class Accounts: DialogViewController
 		accountsByGroup = model.GroupBy (g => g.AccountType);
 
 		Root = CreateNewRoot(accountsByGroup);
+
+		for (int i = 0; i < Root.Count; i++)
+		{
+			var section = Root [i];
+			var accountRootElement = (AccountRootElement)section.Elements [0];
+			accountRootElement.NavigationController = this.NavigationController;
+		}
 	}
 }
