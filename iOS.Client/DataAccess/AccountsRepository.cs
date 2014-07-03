@@ -1,6 +1,7 @@
 using System;
 using iOS.Client.Model;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace iOS.Client
 {
@@ -8,6 +9,8 @@ namespace iOS.Client
 	{
 		Account GetByAccountNumber(string accountNumber);
 		IEnumerable<Account> GetAccountByCustomerId(int id);
+		Account ProcessDeposit (Account account, Transaction transaction);
+		Account ProcessCredit (Account account, Transaction transaction);
 	}
 
 	public class AccountsRepository: IAccountsRepository
@@ -24,6 +27,30 @@ namespace iOS.Client
 		public IEnumerable<Account> GetAccountByCustomerId (int id)
 		{
 			return seedAccounts;
+		}
+
+		public Account ProcessDeposit(Account account, Transaction transaction)
+		{
+			return ProcessTransaction (account, transaction, true);
+		}
+
+		public Account ProcessCredit(Account account, Transaction transaction)
+		{
+			return ProcessTransaction (account, transaction, false);
+		}
+
+		private Account ProcessTransaction(Account account, Transaction transaction, bool isDeposit)
+		{
+			var now = DateTime.Now;
+
+			account.Transactions.Add(transaction);
+
+			if (isDeposit)
+				account.Balance += transaction.Amount;
+			else
+				account.Balance -= transaction.Amount;
+
+			return account;
 		}
 
 		#endregion
